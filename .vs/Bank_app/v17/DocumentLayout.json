@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|c:\\users\\t-gamer\\documents\\programa\u00E7\u00E3o\\estudos\\bank app c#\\bank_app\\bank_app\\bank_app\\console\\verificacoesentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|solutionrelative:bank_app\\console\\verificacoesentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|c:\\users\\t-gamer\\documents\\programa\u00E7\u00E3o\\estudos\\bank app c#\\bank_app\\bank_app\\bank_app\\console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|solutionrelative:bank_app\\console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|c:\\users\\t-gamer\\documents\\programa\u00E7\u00E3o\\estudos\\bank app c#\\bank_app\\bank_app\\bank_app\\infrastructure\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|solutionrelative:bank_app\\infrastructure\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|c:\\users\\t-gamer\\documents\\programa\u00E7\u00E3o\\estudos\\bank app c#\\bank_app\\bank_app\\bank_app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|solutionrelative:bank_app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|c:\\users\\t-gamer\\documents\\programa\u00E7\u00E3o\\estudos\\bank app c#\\bank_app\\bank_app\\bank_app\\arquitetura.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BE00D46-6D60-467A-B179-15E86CD5C795}|Bank_app\\Bank_app.csproj|solutionrelative:bank_app\\arquitetura.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Infrastructure\\ContaRepositorio.cs",
+              "RelativeDocumentMoniker": "Bank_app\\Infrastructure\\ContaRepositorio.cs",
+              "ToolTip": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Infrastructure\\ContaRepositorio.cs",
+              "RelativeToolTip": "Bank_app\\Infrastructure\\ContaRepositorio.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T23:17:27.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VerificacoesEntrada.cs",
+              "DocumentMoniker": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Console\\VerificacoesEntrada.cs",
+              "RelativeDocumentMoniker": "Bank_app\\Console\\VerificacoesEntrada.cs",
+              "ToolTip": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Console\\VerificacoesEntrada.cs",
+              "RelativeToolTip": "Bank_app\\Console\\VerificacoesEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T23:07:58.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Domain\\Account.cs",
+              "RelativeDocumentMoniker": "Bank_app\\Domain\\Account.cs",
+              "ToolTip": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Domain\\Account.cs",
+              "RelativeToolTip": "Bank_app\\Domain\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T22:13:52.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Arquitetura.txt",
+              "DocumentMoniker": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Arquitetura.txt",
+              "RelativeDocumentMoniker": "Bank_app\\Arquitetura.txt",
+              "ToolTip": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Arquitetura.txt",
+              "RelativeToolTip": "Bank_app\\Arquitetura.txt",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-23T14:58:12.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Console\\Program.cs",
+              "RelativeDocumentMoniker": "Bank_app\\Console\\Program.cs",
+              "ToolTip": "C:\\Users\\T-GAMER\\Documents\\Programa\u00E7\u00E3o\\Estudos\\Bank App C#\\Bank_app\\Bank_app\\Bank_app\\Console\\Program.cs",
+              "RelativeToolTip": "Bank_app\\Console\\Program.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowEMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T14:48:21.181Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

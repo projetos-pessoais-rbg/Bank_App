@@ -1,0 +1,112 @@
+﻿Fluxo (passo a passo)
+
+1) Startup (com DI)
+
+    O programa registra as dependências.
+
+    Infrastructure cria o repositório InMemory (um Dictionary/ConcurrentDictionary) já com contas seed (ex.: #1 e #2).
+
+    Application registra os casos de uso (services).
+
+    Console (Presentation) recebe uma instância de App via DI.
+
+2) Usuário escolhe uma ação no Console (ex.: “Transferir”)
+
+     Console lê os inputs (origemId, destinoId, valor) e chama o caso de uso na camada Application.
+
+3) Application (caso de uso)
+
+    Busca as contas no repositório (Infrastructure) via IContaRepository.
+
+    Executa as regras de negócio chamando métodos do Domain (ex.: Debitar, Depositar).
+
+    Confirma a transação com IUnitOfWork.SaveChangesAsync().
+
+4) Retorno ao Console
+
+    O caso de uso retorna (ou lança erro de domínio).
+
+    O Console imprime a mensagem de sucesso/erro.
+
+
+
+Desenho do fluxo (ASCII)
+┌────────────────────┐
+│   Startup (DI)     │
+│  - registra repos  │
+│  - seed de contas  │
+└───────┬────────────┘
+        │ (IContaRepository InMemory - Singleton)
+        ▼
+┌────────────────────┐
+│  Console (App)     │
+│  - mostra menu     │
+│  - lê input        │
+│  - chama UseCase   │
+└───────┬────────────┘
+        │ (ITransferirFundos.ExecutarAsync)
+        ▼
+┌────────────────────┐
+│  Application       │
+│  - orquestra caso  │
+│  - busca contas    │───┐
+│  - chama domínio   │   │ GetById/Add
+│  - SaveChanges     │   │
+└───────┬────────────┘   │
+        │                 │
+        ▼                 │
+┌────────────────────┐    │
+│   Domain           │    │
+│  Conta.Debitar()   │    │
+│  Conta.Depositar() │    │
+│  (regras/invariantes)   │
+└─────────┬──────────┘    │
+          │               │
+          ▼               │
+┌────────────────────┐    │
+│ Infrastructure     │◄───┘
+│  InMemory Repo     │
+│  (Dictionary/      │
+│   ConcurrentDict)  │
+└─────────┬──────────┘
+          │ (resultado/erros)
+          ▼
+┌────────────────────┐
+│  Console (App)     │
+│  - imprime saída   │
+└────────────────────┘
+
+
+
+
+
+Onde coloco a validação de entrada do usuário?
+
+A validação de digitação/entrada (ex.: “isso é um número?”, “valor positivo?”, “ID existe no menu?”) fica na camada de Presentation — no seu projeto Console.
+
+A validação de regra de negócio (ex.: “não pode sacar valor maior que o saldo”, “valor tem que ser > 0”, “conta não pode ficar negativa”) fica no Domínio (métodos da entidade Conta, ou exceções/Result).
+
+Em prática: crie uma classe helper no Console (ex.: Input.cs) com métodos que perguntam e repetem até o usuário digitar algo válido.
+As regras do negócio continuam sendo validadas no Domínio — mesmo que você já tenha checado entradas no Console, o Domínio é a “última barreira”.
+
+“O que é esse Console? É a minha Program.cs?”
+
+Sim. Console = seu projeto executável de linha de comando.
+A Program.cs é o ponto de entrada. Você pode:
+
+Colocar tudo direto na Program.cs (ok p/ projetos simples), ou
+
+Criar uma classe App (Presentation) e chamar new App(...).RunAsync() a partir da Program.cs (fica mais organizado).
+
+
+
+“Mas eu preciso olhar o array do repositório…”
+
+Você não precisa “ver o array”. O array/dicionário é detalhe de implementação do InMemoryContaRepository (privado).
+O fluxo correto é:
+
+Application chama IContaRepository.GetByIdAsync(id) para obter a Conta.
+
+Com a Conta em mãos, chama método do domínio (Debitar, PodeDebitar, etc.).
+
+Se tudo ok, persiste com UpdateAsync e UnitOfWork.SaveChangesAsync().

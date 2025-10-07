@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Bank_app/1.0.0": {
+        "dependencies": {
+          "Figgle": "0.6.5"
+        },
+        "runtime": {
+          "Bank_app.dll": {}
+        }
+      },
+      "Figgle/0.6.5": {
+        "runtime": {
+          "lib/netstandard2.0/Figgle.dll": {
+            "assemblyVersion": "0.6.5.0",
+            "fileVersion": "0.6.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bank_app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Figgle/0.6.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8Z1qvgyDFvqeQB+b/qpp083N5O/1UNEVKpI2TsWD+tM7Ev388VccPysMxre6jeAy7h4m6L6LrguPGmnOh8+ZGA==",
+      "path": "figgle/0.6.5",
+      "hashPath": "figgle.0.6.5.nupkg.sha512"
+    }
+  }
+}
